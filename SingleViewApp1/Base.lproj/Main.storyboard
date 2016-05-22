@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-0h-28b">
+                                <rect key="frame" x="213" y="55" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Aus-0F-RJD"/>
+                                    <constraint firstAttribute="width" constant="175" id="iHe-AR-bWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqH-2F-mdj">
+                                <rect key="frame" x="252" y="124" width="96" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IcS-t8-1MP"/>
+                                    <constraint firstAttribute="width" constant="96" id="zM5-cp-vpu"/>
+                                </constraints>
+                                <state key="normal" title="MyStory"/>
+                                <connections>
+                                    <action selector="generateStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ROt-Jj-KYg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YourStory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-8a-RHr">
+                                <rect key="frame" x="213" y="171" width="175" height="195"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DA6-0h-28b" firstAttribute="leading" secondItem="nmZ-8a-RHr" secondAttribute="leading" id="7JT-23-Lab"/>
+                            <constraint firstItem="DA6-0h-28b" firstAttribute="trailing" secondItem="nmZ-8a-RHr" secondAttribute="trailing" id="NDQ-ND-BG9"/>
+                            <constraint firstItem="DA6-0h-28b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="RyS-LH-NHw"/>
+                            <constraint firstItem="nmZ-8a-RHr" firstAttribute="top" secondItem="fqH-2F-mdj" secondAttribute="bottom" constant="17" id="ZO1-b2-Icd"/>
+                            <constraint firstItem="DA6-0h-28b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bmp-Yr-07G"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nmZ-8a-RHr" secondAttribute="bottom" constant="234" id="epn-Ha-dTs"/>
+                            <constraint firstItem="fqH-2F-mdj" firstAttribute="top" secondItem="DA6-0h-28b" secondAttribute="bottom" constant="39" id="hYx-f5-Z5N"/>
+                            <constraint firstItem="fqH-2F-mdj" firstAttribute="centerX" secondItem="nmZ-8a-RHr" secondAttribute="centerX" id="rGT-p9-F4S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myName" destination="DA6-0h-28b" id="B5x-r5-tO9"/>
+                        <outlet property="simpleLabel" destination="nmZ-8a-RHr" id="1Cm-Gw-QBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="359"/>
+        </scene>
+    </scenes>
+</document>
